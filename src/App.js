@@ -1,13 +1,28 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Blackjack from "./games/Blackjack";
+import Baccarat from "./games/Baccarat";
+import Roulette from "./games/Roulette";
 
 function App() {
   return (
-    <div style={{ textAlign: "center", padding: "50px" }}>
-      <h1>Casino Game</h1>
-      <p>歡迎來到 Casino Game，請選擇您的遊戲！</p>
-      <button onClick={() => alert("Play Blackjack!")}> Blackjack</button>
-      <button onClick={() => alert("Play Baccarat")}> Baccarat</button>
-    </div>
+    <Router>
+      <div>
+        <h1>Welcome to Casino Game</h1>
+        <nav>
+          <ul>
+            <li><Link to="/blackjack">Blackjack</Link></li>
+            <li><Link to="/baccarat">Baccarat</Link></li>
+            <li><Link to="/roulette">Roulette</Link></li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/blackjack" element={<Blackjack />} />
+          <Route path="/baccarat" element={<Baccarat />} />
+          <Route path="/roulette" element={<Roulette />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
