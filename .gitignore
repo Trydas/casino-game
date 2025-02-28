@@ -1,1 +1,26 @@
+# Node.js 相關
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# 編譯輸出
+build/
+dist/
+
+# 環境設定
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# IDE/編輯器
+.vscode/
+.idea/
+.DS_Store
+
+# AWS Amplify 相關
+amplify/
+aws-exports.js
 
