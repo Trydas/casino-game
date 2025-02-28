@@ -1,6 +1,8 @@
 import React from "react";
 
 function Home() {
+  console.log("Home component loaded");
+
   return (
     <div>
       <h1>Welcome to Integrated Casino®</h1>
