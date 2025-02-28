@@ -1,18 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Blackjack from "./components/Blackjack";
+import Baccarat from "./components/Baccarat";
+import Roulette from "./components/Roulette";
 
-const Home = () => {
+const App = () => {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Welcome to Integrated Casino®</h1>
-      <h2>Please select a game</h2>
-      <div style={{ marginTop: "20px", fontSize: "20px" }}>
-        <p><Link to="/blackjack">Blackjack</Link></p>
-        <p><Link to="/baccarat">Baccarat</Link></p>
-        <p><Link to="/roulette">Roulette</Link></p>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blackjack" element={<Blackjack />} />
+        <Route path="/baccarat" element={<Baccarat />} />
+        <Route path="/roulette" element={<Roulette />} />
+      </Routes>
+    </Router>
   );
 };
 
-export default Home;
+export default App;
