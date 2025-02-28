@@ -1,18 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Home = () => {
+function Home() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div>
       <h1>Welcome to Integrated Casino®</h1>
       <h2>Please select a game</h2>
-      <div style={{ marginTop: "20px", fontSize: "20px" }}>
-        <p><Link to="/blackjack">Blackjack</Link></p>
-        <p><Link to="/baccarat">Baccarat</Link></p>
-        <p><Link to="/roulette">Roulette</Link></p>
-      </div>
+      <ul>
+        <li><a href="/blackjack">Blackjack</a></li>
+        <li><a href="/baccarat">Baccarat</a></li>
+        <li><a href="/roulette">Roulette</a></li>
+      </ul>
     </div>
   );
-};
+}
 
 export default Home;
