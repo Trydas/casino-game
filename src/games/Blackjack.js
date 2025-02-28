@@ -2,7 +2,7 @@ import React from "react";
 
 function Blackjack() {
   return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h2>Blackjack</h2>
       <p>Coming soon...</p>
     </div>
