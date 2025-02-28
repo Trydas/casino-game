@@ -2,7 +2,7 @@ import React from "react";
 
 function Roulette() {
   return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h2>Roulette</h2>
       <p>Coming soon...</p>
     </div>
