@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Blackjack from "./components/Blackjack";
-import Baccarat from "./components/Baccarat";
-import Roulette from "./components/Roulette";
+import Home from "./games/Home";
+import Blackjack from "./games/Blackjack";
+import Baccarat from "./games/Baccarat";
+import Roulette from "./games/Roulette";
 
 const App = () => {
   return (
